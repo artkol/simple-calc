@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header-block">
+            <div class="display"></div>
+        </div>
+        <!-- <div class="digits-block"> -->
+        <div class="digits">0</div>
+        <div class="digits">1</div>
+        <div class="digits">2</div>
+        <div class="digits">3</div>
+        <div class="digits">4</div>
+        <div class="digits">5</div>
+        <div class="digits">6</div>
+        <div class="digits">7</div>
+        <div class="digits">8</div>
+        <div class="digits">9</div>
+        <!-- </div> -->
+        <!-- <div class="operations-block"> -->
+        <div class="operations plus">+</div>
+        <div class="operations minus">-</div>
+        <div class="operations times">*</div>
+        <div class="operations divide">/</div>
+        <div class="operations equal">=</div>
+        <div class="operations clear">clr</div>
+        <!-- </div> -->
+    </div>
+
+    <style>
+        .wrapper {
+            /* width: 500px;
+            margin: 0 auto; */
+            max-width: 300px;
+            margin: 5rem auto;
+            padding: 20px;
+            display: grid;
+            grid-gap: 1rem;
+            font-size: 25px;
+            background: rgb(155, 195, 207);
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-rows: auto; */
+            grid-template-areas: "header-block header-block header-block header-block" "digits-block digits-block digits-block digits-block" "operations-block operations-block operations-block operations-block";
+        }
+
+        .header-block {
+            grid-area: header-block;
+        }
+
+        .display {
+            text-align: right;
+            background: #000000;
+            color: #fff;
+            padding: 9px 8px;
+            height: 3rem;
+        }
+
+        .digits-block {
+            grid-area: digits-block;
+        }
+
+        .digits {
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            padding: 13px;
+            background: rgba(76, 95, 93, 0.774);
+        }
+
+        .digits:hover,
+        .operations:hover {
+            cursor: pointer;
+        }
+
+        .operations-block {
+            grid-area: operations-block;
+        }
+
+        .operations {
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            padding: 13px;
+            background: rgb(126, 23, 146);
+        }
+    </style>
+    <script src="main.js"></script>
+</body>
+
+</html>
